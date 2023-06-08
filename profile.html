@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="icon" href="/assets/Revou-alasan.original.png">
+    <link rel="stylesheet" href="/css/profile.css">
+    
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+          <div class="logo">
+            <img class="imgRevou" src="assets\Revou-alasan.original.png">
+          </div>
+        <ul class="menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link"  href="profile.html">Our Profile</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#Profile">Portofolio</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#MessageUs">Message Us</a></li>
+        </ul>
+    </nav>
+    <div class="Hero">
+        <div class="kata-kata">
+        <h1> This is Our Company Profile</span></h1>
+        <p>Perusahan Kami Bergerak dibidang Teknologi dan Informatika,
+            <br>
+            Terutama dalam bidang Ios dan Mobile Industri
+        </p>
+        </div>
+        <div class="kata-kata">
+            <h1> This is Our Company Profile</span></h1>
+            <p>Mendobrak setelan awal menjadi sesuatu yang tidak biasa,
+                <br>
+                Ini adalah slogan perusahan kami
+            </p>
+        </div>
+        <div class="kata-kata">
+            <h1> Kami menawarkan beberapa produk Ios dan Mobile Industri </span></h1>
+            <p> Pembuatan smart App mobile,
+                <br> 
+                Ai mobile yang terhubung dengan segala perangkat,
+                <br>
+                IoT smart Home, menghubungkan rumah anda dengan perangkat mobile,
+            </p>
+        </div>
+            <div class="slide-container">
+              <img class="img-slideshow"  src="assets/download.jpeg" />
+              <img class="img-slideshow" src="assets/business-wallpaper-1920x1080.jpg" />
+              <img class="img-slideshow" src="assets/download1.jpeg" />
+              <div class="button">
+                <button class="clickPreview" onclick="plusDivs(-1)">Preview</button>
+                <button class="clickNext" onclick="plusDivs(1)">Next</button>
+        </div>
+            </div>   
+    </div>
+    <div class="boxs">
+        <div class="ourHead"><h1>Our Headquarter</h1></div>
+        <div class="iniHeader">
+           <div class="textControl1">
+            <div class="islan">
+                <img src="assets/inilah-8-perbedaan-kota-jakarta-dan-yogyakarta-pilih-tinggal-di-mana-NBEqXd4H2D.jpeg" alt="Jakarta" >
+            </div>
+            <p>Jakarta</p>
+        </div>
+        <div class="textControl1">
+            <div class="islan">
+                <img src="assets/5-Tempat-Ngabuburit-Asik-Di-Bandung-Yang-Bisa-Kamu-Jelajahi.jpg" alt="Bandung" >
+            </div>
+        <p>Surabaya</p>
+        </div>
+        <div class="textControl1">
+            <div class="islan">
+                <img src="assets/DJI_0126-final.jpg" alt="Surabaya" >
+            </div>
+            <p>Bandung</p>
+        </div>
+        </div>
+    </div>
+<div id="message-us-section">
+    <h1>
+         Message Us
+    </h1>
+    <div class="iniMessage">
+        <form 
+        class="message-form"
+        name="message-form" 
+        onsubmit="return validateForm()"
+        >
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text"
+                    name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="birth-date" /></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="male"
+                        name="gender" value="Laki-Laki">Laki-Laki
+                        </input>
+                        <input type="radio" id="female"
+                        name="gender" value="Perempuan">Perempuan
+                        </input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><textarea type="textarea"
+                    name="messages"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    <div class="iniOutput">
+        <p>Waktu Submit: <span id="current-time"></span></p>
+        <p>Nama: <span id="sender-full-name"></span></p>
+        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+        <p>Pesan: <span id="sender-messages"></span></p>
+    </div>
+    </div>
+</div>
+<div style="display: flex; justify-content:end; align-items: center; width: 100%; padding-right: 20px;">
+    Created by RevoU
+</div>
+</div>
+</body>
+<script src="js/control2.js">
+</script>
+</html>
